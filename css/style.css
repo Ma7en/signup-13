@@ -1,0 +1,287 @@
+
+
+
+/* font-family: 'Courgette', cursive; */
+
+
+/* my font */
+
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+
+
+@font-face {
+	font-family: 'Courgette', cursive;
+	src: url("../font/Courgette/Courgette-Regular.ttf");
+
+}
+
+body {
+    font-family: 'Courgette', cursive;
+    background-color: darkslateblue;
+    /* background-image: url("../img/1-1.jpg"); */
+    /* background-size: cover; */
+}
+
+:root {
+    --main-color: #2196f3;
+    --main-color-h: #0870c5;
+    --color-f: #999999;
+}
+
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+
+}
+
+
+
+/* start form */
+.parent .container {
+    display: flex;
+    justify-content: center;
+}
+
+.parent .form {
+    margin: 60px 0 50px;
+    width: 370px;
+    background-color: #fff;
+    padding: 20px 25px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.parent .form .signup_t {
+    text-align: center;
+    margin-bottom: 25px;
+    cursor: default;
+}
+
+.parent .form .signup_t h2 {
+    padding: 15px 0;
+    width: fit-content;
+    position: relative;
+    left: 50%;
+    transition: .5s;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
+}
+
+.parent .form .signup_t h2::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 0px;
+    height: 3px;
+    background-color: var(--main-color);
+    transition: .5s;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
+}
+
+.parent .form .signup_t h2::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 0px;
+    height: 3px;
+    background-color: var(--main-color);
+    transition: .5s;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
+}
+
+.parent .form .signup_t:hover h2 {
+    color: var(--main-color);
+    transition: all .5s;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -ms-transition: all .5s;
+    -o-transition: all .5s;
+}
+
+.parent .form .signup_t:hover h2::before,
+.parent .form .signup_t:hover h2::after {
+    width: 100%;
+    transition: all .5s;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -ms-transition: all .5s;
+    -o-transition: all .5s;
+}
+
+
+.parent .form .cont {
+    margin: 20px 0;
+    color: var(--color-f);
+    caret-color: var(--main-color);
+    border-bottom: 1px solid var(--color-f);
+    padding: 15px 0;
+}
+
+.parent .form .cont input {
+    border: none;
+    margin-left: 5px;
+    color: var(--main-color);
+    background-color: transparent;
+}
+
+.parent .form .cont input:focus {
+    outline: none;
+}
+
+/* start login */
+.parent .form input[type="submit"] {
+    border: none;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+    background-color: var(--main-color);
+    color: #fff;
+    margin-bottom: 20px;
+    cursor: pointer;
+    transition: all .5s;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -ms-transition: all .5s;
+    -o-transition: all .5s;
+}
+
+.parent .form input[type="submit"]:hover {
+    background-color: var(--main-color-h);
+    transition: all .5s;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -ms-transition: all .5s;
+    -o-transition: all .5s;
+}
+
+/* start here */
+.parent .form .here {
+    text-align: center;
+    margin: 20px 0;
+    border-bottom: 1px dashed var(--color-f);
+    padding-bottom: 20px;
+}
+
+.parent .form .here p {
+    color: #999999;
+}
+
+.parent .form .here p a {
+    color: var(--main-color);
+    transition: all .5s;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -ms-transition: all .5s;
+    -o-transition: all .5s;
+}
+
+.parent .form .here p a:hover {
+    color: var(--main-color-h);
+    transition: all .5s;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -ms-transition: all .5s;
+    -o-transition: all .5s;
+}
+
+
+
+/* start icon */
+
+.parent .form .icon {
+    text-align: center;
+}
+
+.parent .form .icon .i {
+    text-align: center;
+    align-items: center;
+    margin: 20px 0 5px;
+}
+
+.parent .form .icon h3 {
+    margin-bottom: 20px;
+    opacity: .8;
+}
+
+.parent .form .icon i {
+    margin: 0 5px;
+    width: 30px;
+    height: 30px;
+    color: #fff;
+    padding-top: 7px;
+    text-align: center;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.parent .form .icon .i a i {
+    transition: all .5s;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -ms-transition: all .5s;
+    -o-transition: all .5s;
+}
+
+.parent .form .icon .i a i.fa-facebook-f {
+    background-color: #3b5998;
+}
+
+.parent .form .icon .i a i.fa-twitter {
+    background-color: #1da1f2;
+}
+
+.parent .form .icon .i a i.fa-google {
+    background-color: #db4437;
+}
+
+.parent .form .icon .i a i:hover {
+    transition: all .5s;
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -ms-transition: all .5s;
+    -o-transition: all .5s;
+}
+
+
+
+
+
